@@ -71,7 +71,7 @@ nav {
 }
 
 .hover-link:hover {
-    color: var(--secondary-text-color);
+    color: var(--accent-color);
 }
 
 .hover-link:active {
@@ -108,6 +108,21 @@ nav {
 
 .search-button:hover {
     background-color: var(--accent-color-dark);
+}
+
+#contact-btn {
+    background-color: rgb(255, 0, 68);
+    color: white;
+    padding: 8px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+}
+
+#contact-btn:hover{
+    background-color: rgb(208, 6, 60);
 }
 
 main {
@@ -151,4 +166,72 @@ main {
 
 .news-source {
     margin-block: 12px;
+}
+
+
+@media only screen and (max-width:1080px) {
+    .cards-container {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        align-items: start;
+    }
+
+    .main-nav {
+        justify-content: space-around;
+    }
+}
+
+/* Media query for tablets (landscape) */
+@media only screen and (max-width: 900px) {
+
+    .company-logo {
+        margin-bottom: -25px;
+    }
+
+    .main-nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-links .links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .search-bar {
+        margin-top: -10px;
+    }
+
+    .search-button {
+        margin-left: 7px;
+    }
+
+    .news-input {
+        width: 100%;
+        padding: 7px;
+    }
+
+    .cards-container {
+        margin-top: 30px;
+    }
+}
+
+/* Media query for tablets and mobiles */
+@media only screen and (max-width: 768px) {
+
+    .card {
+        width: 90%;
+    }
+}
+
+/* Media query for mobiles */
+@media only screen and (max-width: 480px) {
+
+    .cards-container {
+        margin-top: 30px;
+    }
 }
